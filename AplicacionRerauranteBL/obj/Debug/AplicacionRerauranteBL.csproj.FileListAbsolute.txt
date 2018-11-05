@@ -1,0 +1,6 @@
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\AplicacionRerauranteBL\bin\Debug\AplicacionRerauranteBL.dll
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\AplicacionRerauranteBL\bin\Debug\AplicacionRerauranteBL.pdb
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\AplicacionRerauranteBL\obj\Debug\AplicacionRerauranteBL.csprojAssemblyReference.cache
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\AplicacionRerauranteBL\obj\Debug\AplicacionRerauranteBL.csproj.CoreCompileInputs.cache
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\AplicacionRerauranteBL\obj\Debug\AplicacionRerauranteBL.dll
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\AplicacionRerauranteBL\obj\Debug\AplicacionRerauranteBL.pdb

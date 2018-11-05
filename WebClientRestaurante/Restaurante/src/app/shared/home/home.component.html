@@ -1,0 +1,48 @@
+<section class="ae-container-fluid rk-main">
+  <input type="radio" name="layout-ctrl" checked id="layout-base" class="layout-ctrl-input">
+  <div class="ae-container-fluid rk-layout-ctrl-cont">
+    <label for="layout-base" class="rk-layout-ctrl">
+      <svg>
+        <use xlink:href="assets/img/symbols.svg#icon-view-default"></use>
+      </svg>
+    </label>
+  </div>
+  <input type="radio" name="layout-ctrl" id="layout-grid" class="layout-ctrl-input">
+  <div class="ae-container-fluid rk-layout-ctrl-cont">
+    <label for="layout-grid" class="rk-layout-ctrl">
+      <svg>
+        <use xlink:href="assets/img/symbols.svg#icon-view-alt"></use>
+      </svg>
+    </label>
+  </div>
+  <div class="rk-layout-ctrl-mobile">
+    <svg viewBox="0 0 9 9" class="layout-mob-1">
+      <rect width="100%" height="100%" fill="currentColor"></rect>
+    </svg>
+    <svg viewBox="0 0 9 9" class="layout-mob-2">
+      <rect width="100%" height="100%" fill="currentColor"></rect>
+    </svg>
+    <svg viewBox="0 0 9 9" class="layout-mob-3">
+      <rect width="100%" height="100%" fill="currentColor"></rect>
+    </svg>
+    <svg viewBox="0 0 9 9" class="layout-mob-4">
+      <rect width="100%" height="100%" fill="currentColor"></rect>
+    </svg>
+  </div>
+  <section class="ae-container-fluid ae-container-fluid--inner loading rk-portfolio ">
+    <div class="rk-portfolio__items">
+      <a href="portfolio-item.html" class="rk-item rk-item--flex  rk-size-12 rk-tosize-6 rk-landscape " style="background-image: url('../../../assets/images/restaurante.jpg')">
+        <div class="item-meta">
+          <h2>Restaurante la perla</h2>
+          <p>Los mejores de comida de mar</p>
+        </div>
+      </a>
+      <a href="portfolio-item.html" class="rk-item rk-item--flex rk-size-6  rk-portrait" [style]="item.img" *ngFor="let item of _produc.menu">
+        <div class="item-meta">
+          <h2>{{item.NombreProducto}}</h2>
+          <p>{{item.descripcion}}</p>
+        </div>
+      </a>
+    </div>
+  </section>
+</section>
