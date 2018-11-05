@@ -37,7 +37,7 @@
           <p>Los mejores de comida de mar</p>
         </div>
       </a>
-      <a href="portfolio-item.html" class="rk-item rk-item--flex rk-size-6  rk-portrait" [style]="item.img" *ngFor="let item of _produc.menu">
+      <a href="portfolio-item.html" [id]="item.id" class="rk-item rk-item--flex rk-size-6  rk-portrait" [style]="item.img | rutaStyleImg"  *ngFor="let item of _produc.menu">
         <div class="item-meta">
           <h2>{{item.NombreProducto}}</h2>
           <p>{{item.descripcion}}</p>

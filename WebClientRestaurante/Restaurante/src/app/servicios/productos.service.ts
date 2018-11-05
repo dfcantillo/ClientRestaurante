@@ -7,10 +7,10 @@ export class ProductosService {
 
 
   menu: any =  [
-    { NombreProducto: "Mariscos", img: "background-image: url('../../../assets/images/mariscos.jpg')", descripcion: "los mejores", ruta:"../../../assets/images/mariscos.jpg"},
-    { NombreProducto: "Juegos Naturales", img: "background-image: url('../../../assets/images/jugos.jpg')", descripcion: "los mejores", ruta: "../../../assets/images/mariscos.jpg" },
-    { NombreProducto: "gaseosas", img: "background-image: url('../../../assets/images/gaseosas.jpg')", descripcion: "las mejores", ruta: "../../../assets/images/mariscos.jpg"},
-    { NombreProducto: "Pescados", img: "background-image: url('../../../assets/images/pescados.jpg')", descripcion: "los mejores", ruta: "../../../assets/images/mariscos.jpg"}
+    { NombreProducto: "Mariscos", id: "item1", img:  "background-image: url('../../../assets/images/mariscos.jpg')", descripcion: "los mejores"},
+    { NombreProducto: "Juegos Naturales", id: "item2", img: "background-image: url('../../../assets/images/jugos.JPG')", descripcion: "los mejores" },
+    { NombreProducto: "gaseosas", id: "item3", img: "background-image: url('../../../assets/images/gaseosas.jpg')", descripcion: "las mejores"},
+    { NombreProducto: "Pescados", id: "item4", img: "background-image: url('../../../assets/images/pescados.jpg')", descripcion: "los mejores"}
   ];
 
   constructor() {
