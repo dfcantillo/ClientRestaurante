@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Restaurante</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="assets/Bootstrap4/css/bootstrap.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/aurora-pack.min.css">
+  <link rel="stylesheet" href="assets/css/aurora-theme-base.min.css">
+  <link rel="stylesheet" href="assets/css/urku.css">
+  <link href="assets/Csss/animate.css" rel="stylesheet" />
+  <link href="assets/style.css" rel="stylesheet" />
+</head>
+<body class="top-fixed">
+  <app-root></app-root>
+
+
+  <script src="assets/Jquery/jquery.3.3.1.js"></script>
+  <script src="assets/Bootstrap4/js/bootstrap.js"></script>
+  <script src="assets/js/svg4everybody.min.js"></script>
+  <script src="assets/font-awesome/svg-with-js/js/all.js"></script>
+  <!--<script src="assets/datatables/jquery.dataTables.min.js"></script>-->
+  <script src="assets/datatables/jquery.dataTables.js"></script>
+  <!-- start - This is for export functionality only -->
+  <script src="https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+  <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+  <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+  <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+  <!-- end - This is for export functionality only -->
+  <script>
+    $(document).ready(function () {
+      // $('#myTable').DataTable();
+      //setTimeout(function () {
+        //$('#myTable').DataTable({
+        //  dom: 'Bfrtip',
+        //  buttons: [
+        //    'copy', 'csv', 'excel', 'pdf', 'print'
+        //  ]
+        //});
+   //   }, 2000);
+
+     // crearDataTable();
+    
+    });
+
+    function crearDataTable() {
+      setTimeout(function () {
+      $('#myTable').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+          'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
+        });
+      }, 400);
+    }
+
+  </script>
+</body>
+</html>

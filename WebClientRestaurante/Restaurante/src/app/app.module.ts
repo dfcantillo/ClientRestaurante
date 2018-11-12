@@ -1,7 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
+//Componentes
 import { AppComponent } from './app.component';
 import { ProductosComponent } from './pages/productos/productos.component';
 import { ClientesComponent } from './pages/clientes/clientes.component';
@@ -15,6 +18,10 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './shared/home/home.component';
 import { RutaStyleImgPipe } from './pipes/ruta-style-img.pipe';
+
+//Rutas
+import { APP_ROUTES } from './app.routes';
+import { CantidadCompraComponent } from './components/cantidad-compra/cantidad-compra.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +37,15 @@ import { RutaStyleImgPipe } from './pipes/ruta-style-img.pipe';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    RutaStyleImgPipe
+    RutaStyleImgPipe,
+    CantidadCompraComponent
   ],
   imports: [
     BrowserModule,
-    CommonModule
+    CommonModule,
+    FormsModule,
+    HttpClientModule,
+    APP_ROUTES
   ],
   providers: [],
   bootstrap: [AppComponent]

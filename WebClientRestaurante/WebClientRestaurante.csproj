@@ -16,16 +16,31 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.AspNetCore.SpaServices.Extensions" Version="2.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+    <PackageReference Include="Rebus.AzureServiceBus" Version="6.0.3" />
   </ItemGroup>
 
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Compile Remove="Restaurante\**" />
     <Content Remove="$(SpaRoot)**" />
+    <Content Remove="Restaurante\**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Remove="Restaurante\**" />
+    <None Remove="Restaurante\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="ClientApp\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dc.BusinnesLogic\Dc.BusinnesLogic.csproj" />
+    <ProjectReference Include="..\Dc.Infrastructure.Data\Dc.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\Dc.Infrastructure.Trasversal\Dc.Infrastructure.Trasversal.csproj" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

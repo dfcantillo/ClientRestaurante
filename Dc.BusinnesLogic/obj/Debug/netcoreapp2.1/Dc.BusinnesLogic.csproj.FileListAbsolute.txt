@@ -1,0 +1,31 @@
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\Dc.BusinnesLogic\bin\Debug\netcoreapp2.1\Dc.BusinnesLogic.deps.json
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\Dc.BusinnesLogic\bin\Debug\netcoreapp2.1\Dc.BusinnesLogic.dll
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\Dc.BusinnesLogic\bin\Debug\netcoreapp2.1\Dc.BusinnesLogic.pdb
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\Dc.BusinnesLogic\bin\Debug\netcoreapp2.1\Dc.Infrastructure.Data.dll
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\Dc.BusinnesLogic\bin\Debug\netcoreapp2.1\Dc.Infrastructure.Trasversal.dll
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\Dc.BusinnesLogic\bin\Debug\netcoreapp2.1\Oracle.DataAccess.dll
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\Dc.BusinnesLogic\bin\Debug\netcoreapp2.1\log4net.dll
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\Dc.BusinnesLogic\bin\Debug\netcoreapp2.1\Dc.Infrastructure.Data.pdb
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\Dc.BusinnesLogic\bin\Debug\netcoreapp2.1\Dc.Infrastructure.Trasversal.pdb
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\Dc.BusinnesLogic\obj\Debug\netcoreapp2.1\Dc.BusinnesLogic.csprojAssemblyReference.cache
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\Dc.BusinnesLogic\obj\Debug\netcoreapp2.1\Dc.BusinnesLogic.csproj.CoreCompileInputs.cache
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\Dc.BusinnesLogic\obj\Debug\netcoreapp2.1\Dc.BusinnesLogic.AssemblyInfoInputs.cache
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\Dc.BusinnesLogic\obj\Debug\netcoreapp2.1\Dc.BusinnesLogic.AssemblyInfo.cs
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\Dc.BusinnesLogic\obj\Debug\netcoreapp2.1\Dc.BusinnesLogic.csproj.CopyComplete
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\Dc.BusinnesLogic\obj\Debug\netcoreapp2.1\Dc.BusinnesLogic.dll
+C:\Users\dfcantillo\Desktop\Materias U\Linea Enfasis 3\ProyectoDeFinalMateria\SolucionProyectoRestaurante\RestauranNCapas\Dc.BusinnesLogic\obj\Debug\netcoreapp2.1\Dc.BusinnesLogic.pdb
+C:\Proyectos\Perso\RestauranNCapas\Dc.BusinnesLogic\bin\Debug\netcoreapp2.1\Dc.BusinnesLogic.deps.json
+C:\Proyectos\Perso\RestauranNCapas\Dc.BusinnesLogic\bin\Debug\netcoreapp2.1\Dc.BusinnesLogic.dll
+C:\Proyectos\Perso\RestauranNCapas\Dc.BusinnesLogic\bin\Debug\netcoreapp2.1\Dc.BusinnesLogic.pdb
+C:\Proyectos\Perso\RestauranNCapas\Dc.BusinnesLogic\bin\Debug\netcoreapp2.1\Dc.Infrastructure.Data.dll
+C:\Proyectos\Perso\RestauranNCapas\Dc.BusinnesLogic\bin\Debug\netcoreapp2.1\Dc.Infrastructure.Trasversal.dll
+C:\Proyectos\Perso\RestauranNCapas\Dc.BusinnesLogic\bin\Debug\netcoreapp2.1\log4net.dll
+C:\Proyectos\Perso\RestauranNCapas\Dc.BusinnesLogic\bin\Debug\netcoreapp2.1\Dc.Infrastructure.Data.pdb
+C:\Proyectos\Perso\RestauranNCapas\Dc.BusinnesLogic\bin\Debug\netcoreapp2.1\Dc.Infrastructure.Trasversal.pdb
+C:\Proyectos\Perso\RestauranNCapas\Dc.BusinnesLogic\obj\Debug\netcoreapp2.1\Dc.BusinnesLogic.csprojAssemblyReference.cache
+C:\Proyectos\Perso\RestauranNCapas\Dc.BusinnesLogic\obj\Debug\netcoreapp2.1\Dc.BusinnesLogic.csproj.CoreCompileInputs.cache
+C:\Proyectos\Perso\RestauranNCapas\Dc.BusinnesLogic\obj\Debug\netcoreapp2.1\Dc.BusinnesLogic.AssemblyInfoInputs.cache
+C:\Proyectos\Perso\RestauranNCapas\Dc.BusinnesLogic\obj\Debug\netcoreapp2.1\Dc.BusinnesLogic.AssemblyInfo.cs
+C:\Proyectos\Perso\RestauranNCapas\Dc.BusinnesLogic\obj\Debug\netcoreapp2.1\Dc.BusinnesLogic.csproj.CopyComplete
+C:\Proyectos\Perso\RestauranNCapas\Dc.BusinnesLogic\obj\Debug\netcoreapp2.1\Dc.BusinnesLogic.dll
+C:\Proyectos\Perso\RestauranNCapas\Dc.BusinnesLogic\obj\Debug\netcoreapp2.1\Dc.BusinnesLogic.pdb

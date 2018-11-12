@@ -1,0 +1,25 @@
+<div class="container">
+
+  <h2>Produto: <span style="color:green">{{titulo}}</span></h2>
+  <a class="btn btn-outline-info" [routerLink]="['/home']"><i class="fas fa-hand-point-left"></i> Atras</a>
+  <hr />
+  <div class="alert alert-info" role="alert" *ngIf="productos.length == 0">
+    Cargando.....
+  </div>
+  <div class="card-columns" *ngIf="productos.length>0">
+    <div class="card animated  fadeIn delay-2s" *ngFor="let item of productos">
+      <img class="card-img-top" src="../../../assets/images/{{item.nombre}}.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{item.nombre}}</h5>
+        <p class="card-text"><strong>Precio:</strong> $ {{item.precio.toLocaleString()}}</p>
+        <hr />
+
+        <app-cantidad-compra [Producto]="item"></app-cantidad-compra>
+      </div>
+    </div>
+  </div>
+  <a class="btn btn-outline-info" [routerLink]="['/home']"><i class="fas fa-hand-point-left"></i> Atras</a>
+
+</div>
+
+

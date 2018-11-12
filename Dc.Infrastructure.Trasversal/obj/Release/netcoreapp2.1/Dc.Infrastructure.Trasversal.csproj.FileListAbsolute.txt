@@ -1,0 +1,11 @@
+C:\Proyectos\Perso\RestauranNCapas\Dc.Infrastructure.Trasversal\bin\Release\netcoreapp2.1\Dc.Infrastructure.Trasversal.deps.json
+C:\Proyectos\Perso\RestauranNCapas\Dc.Infrastructure.Trasversal\bin\Release\netcoreapp2.1\Dc.Infrastructure.Trasversal.dll
+C:\Proyectos\Perso\RestauranNCapas\Dc.Infrastructure.Trasversal\bin\Release\netcoreapp2.1\Dc.Infrastructure.Trasversal.pdb
+C:\Proyectos\Perso\RestauranNCapas\Dc.Infrastructure.Trasversal\bin\Release\netcoreapp2.1\log4net.dll
+C:\Proyectos\Perso\RestauranNCapas\Dc.Infrastructure.Trasversal\obj\Release\netcoreapp2.1\Dc.Infrastructure.Trasversal.csprojAssemblyReference.cache
+C:\Proyectos\Perso\RestauranNCapas\Dc.Infrastructure.Trasversal\obj\Release\netcoreapp2.1\Dc.Infrastructure.Trasversal.csproj.CoreCompileInputs.cache
+C:\Proyectos\Perso\RestauranNCapas\Dc.Infrastructure.Trasversal\obj\Release\netcoreapp2.1\Dc.Infrastructure.Trasversal.AssemblyInfoInputs.cache
+C:\Proyectos\Perso\RestauranNCapas\Dc.Infrastructure.Trasversal\obj\Release\netcoreapp2.1\Dc.Infrastructure.Trasversal.AssemblyInfo.cs
+C:\Proyectos\Perso\RestauranNCapas\Dc.Infrastructure.Trasversal\obj\Release\netcoreapp2.1\Dc.Infrastructure.Trasversal.csproj.CopyComplete
+C:\Proyectos\Perso\RestauranNCapas\Dc.Infrastructure.Trasversal\obj\Release\netcoreapp2.1\Dc.Infrastructure.Trasversal.dll
+C:\Proyectos\Perso\RestauranNCapas\Dc.Infrastructure.Trasversal\obj\Release\netcoreapp2.1\Dc.Infrastructure.Trasversal.pdb

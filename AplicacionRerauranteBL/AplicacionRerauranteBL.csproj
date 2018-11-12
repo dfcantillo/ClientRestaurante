@@ -40,11 +40,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contractos\IObtenerProdcutosServiceBL.cs" />
+    <Compile Include="Implementacion\ObtenerProdcutosServiceBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Contractos\" />
-    <Folder Include="Implementacion\" />
+    <ProjectReference Include="..\Infraestructura.trasversal\Infraestructura.trasversal.csproj">
+      <Project>{3a10a2a7-1706-42a9-ad3f-685f403307fd}</Project>
+      <Name>Infraestructura.trasversal</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
