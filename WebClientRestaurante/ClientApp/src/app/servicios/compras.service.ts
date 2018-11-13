@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map, filter } from 'rxjs/operators'
 import { Productos } from '../models/productos.model';
+import swal from 'sweetalert';
 
 @Injectable({
   providedIn: 'root'
@@ -32,10 +33,40 @@ export class ComprasService {
       );
   }
 
+  obtenerCompras() {
+    const url = "api/ObtenerCompras";
+    return this.http.get(url, { headers: this.header });
+  }
+
   obtenerLogCompras() {
     const url = "api/ObtenerLogCompras";
     return this.http.get(url, { headers: this.header });
   }
+
+  eliminarCompraCliente(idRegistro: number) {
+    const url = "api/EliminarCompraCliente";
+    return this.http.post(url, idRegistro, { headers: this.header })
+      .pipe(
+      map(resultado => {
+        swal("Exitoso!", resultado, "success");
+        return resultado;
+        })
+      );
+  
+  }
+
+  actualizarCompraCliente(compra) {
+    const url = "api/ActualizarCompra";
+  return this.http.post(url, compra, { headers: this.header })
+      .pipe(
+        map(resultado => {
+          swal("Exitoso!", resultado, "success");
+          return resultado;
+        })
+      );
+
+  }
+
 
 
 

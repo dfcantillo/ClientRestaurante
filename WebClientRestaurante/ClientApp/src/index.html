@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="assets/css/aurora-theme-base.min.css">
   <link rel="stylesheet" href="assets/css/urku.css">
   <link href="assets/Csss/animate.css" rel="stylesheet" />
-  <link href="assets/style.css" rel="stylesheet" />
+  <link href="assets/datatables/css/style.css" rel="stylesheet" />
 </head>
 <body class="top-fixed">
   <app-root></app-root>
@@ -31,7 +31,7 @@
   <script src="https://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
   <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
   <script src="https://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
-  <!-- end - This is for export functionality only -->
+  <!--<!-- end - This is for export functionality only -->
   <script>
     $(document).ready(function () {
       // $('#myTable').DataTable();
@@ -48,15 +48,18 @@
     
     });
 
-    function crearDataTable() {
+    function crearDataTable(id) {
       setTimeout(function () {
-      $('#myTable').DataTable({
+      $(id).DataTable({
         dom: 'Bfrtip',
         buttons: [
           'copy', 'csv', 'excel', 'pdf', 'print'
+        ],
+        "order": [
+          [1, 'desc']
         ]
         });
-      }, 400);
+      }, 10);
     }
 
   </script>

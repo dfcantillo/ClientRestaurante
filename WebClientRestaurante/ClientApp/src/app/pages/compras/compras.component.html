@@ -2,8 +2,9 @@
   <div class="card-body">
     <h2 class="card-title"><strong>Registro de compras</strong></h2>
     <h4 class="card-subtitle">Reporte de ventas realizadas</h4>
+
     <div class="table-responsive m-t-40">
-      <table id="myTable" class="table table-bordered table-striped">
+      <table id="tablasCompras" class="table table-bordered table-striped">
         <!--[mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="5"-->
         <thead>
           <tr>
@@ -17,14 +18,14 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let item of logs">
+          <tr *ngFor="let item of compras">
             <td>{{item.fechaCompra | date:'medium'}}</td>
             <td>{{item.producto}}</td>
             <td>{{item.cantidad}}</td>
             <td>{{item.nombreCompleto}}</td>
             <td>
-              <a class="btn btn-info"><i class="fas fa-edit"></i></a>
-             <a class="btn btn-info"><i class="fas fa-trash-alt"></i></a>
+              <a class="btn btn-outline-info" (click)="actualizarRegistro(item);" ><i class="fas fa-edit"></i></a>&nbsp;
+              <a class="btn btn-outline-danger" (click)="eliminarRegistro(item);"><i class="fas fa-trash-alt"></i></a>
             </td>
           </tr>
 
@@ -34,3 +35,7 @@
     </div>
   </div>
 </div>
+<app-modal [Compra]="compraCliente"></app-modal>
+
+
+

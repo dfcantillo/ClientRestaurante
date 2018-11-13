@@ -18,7 +18,7 @@ namespace IDc.Infrastructure.Data.DAO.Implementacion
         #region Dependency Injection
 
         private readonly IConexionBD _conexionBD;
-        public ConsultasResuranteDAO(IConexionBD conexionBD)
+        public ConsultasRestauranteDAO(IConexionBD conexionBD)
         {
             _conexionBD = conexionBD;
 
@@ -37,6 +37,27 @@ namespace IDc.Infrastructure.Data.DAO.Implementacion
             {
                 string query = "select ID_PRODUCTO Id, nombre, DESCRIPCION, PRECIO," +
                     " ID_CATEGORIA IdCategoria , ID_PROVEEDORES IdProvedores , Cantidad from productos where id_categoria='" + idCategoria + "'";
+                using (IDbConnection connection = _conexionBD.ConnectionDB())
+                {
+                    ilProductosDTOs = connection.Query<ProductosDTO>(query).ToList();
+                }
+
+                return ilProductosDTOs;
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+        public IList<ProductosDTO> ObtenerTodosLosProductos() {
+            IList<ProductosDTO> ilProductosDTOs = new List<ProductosDTO>();
+            try
+            {
+                string query = "select ID_PRODUCTO Id, nombre, DESCRIPCION, PRECIO," +
+                    " ID_CATEGORIA IdCategoria , ID_PROVEEDORES IdProvedores , Cantidad from productos";
                 using (IDbConnection connection = _conexionBD.ConnectionDB())
                 {
                     ilProductosDTOs = connection.Query<ProductosDTO>(query).ToList();
@@ -102,7 +123,7 @@ namespace IDc.Infrastructure.Data.DAO.Implementacion
             IList<ComprasDTO> ilcomprasDTOs = new List<ComprasDTO>();
             try
             {
-                string query = "select co.FECHA fechaCompra , pro.NOMBRE Producto, " +
+                string query = "select co.ID_COMPRAS Id, co.FECHA fechaCompra , pro.NOMBRE Producto, " +
                                " co.cantidad, (cli.NOMBRE || ' ' || cli.APELLIDOS)NombreCompleto from COMPRAS co" +
                                " inner join CLIENTE cli on co.ID_CLIENTE = cli.ID_CLIENTE" +
                                " inner join PRODUCTOS pro on co.ID_PRODUCTO = pro.ID_PRODUCTO order by co.ID_COMPRAS desc ";
@@ -127,11 +148,11 @@ namespace IDc.Infrastructure.Data.DAO.Implementacion
             IList<LogComprasDTO> IllogComprasDTOs = new List<LogComprasDTO>();
             try
             {
-                string query = "select logc.FECHA fechaCompra , (cli.NOMBRE || ' ' ||  cli.APELLIDOS)NombreCompleto"+
+                string query = "select logc.ID_LOG Id,  logc.FECHA fechaCompra , (cli.NOMBRE || ' ' ||  cli.APELLIDOS)NombreCompleto" +
                    " , pro.NOMBRE Producto, logc.cantidad,logc.FECHADEREGISTRO,logc.ACCION"+
                    "   from log_compras logc"+
                    " inner join CLIENTE cli on logc.ID_CLIENTE = cli.ID_CLIENTE "+
-                   " inner join PRODUCTOS pro on logc.ID_PRODUCTO = pro.ID_PRODUCTO order by FECHADEREGISTRO desc";
+                   " inner join PRODUCTOS pro on logc.ID_PRODUCTO = pro.ID_PRODUCTO order by logc.ID_LOG desc";
                 using (IDbConnection connection = _conexionBD.ConnectionDB())
                 {
                     IllogComprasDTOs = connection.Query<LogComprasDTO>(query).ToList();
@@ -139,6 +160,50 @@ namespace IDc.Infrastructure.Data.DAO.Implementacion
 
                 return IllogComprasDTOs;
 
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+        }
+
+        public int EliminarCompra(int idCompra)
+        {
+            int resultado = 0;
+            try
+            {
+                string query = "Delete from compras where id_compras ="+idCompra+" ";
+                using (IDbConnection connection = _conexionBD.ConnectionDB())
+                {
+                    resultado = connection.Execute(query);
+                }
+
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
+
+        public int ActualizarCompra(ComprasDTO comprasDTO)
+        {
+            int resultado = 0;
+            try
+            {
+                string query = "UPDATE COMPRAS SET fecha=sysdate , cantidad="+comprasDTO.Cantidad+"" +
+                    ",id_cliente=1,id_producto="+comprasDTO.IdProducto+" "+
+                        " where ID_COMPRAS = "+comprasDTO.Id+"" ;
+                using (IDbConnection connection = _conexionBD.ConnectionDB())
+                {
+                    resultado = connection.Execute(query);
+                }
+
+                return resultado;
             }
             catch (Exception ex)
             {

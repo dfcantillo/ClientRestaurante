@@ -16,6 +16,10 @@ namespace Dc.BusinnesLogic.Contractos
         /// <returns>Lista de productos</returns>
         IList<ProductosDTO> ObtenerProductosPorCategoria(string idCategoria);
 
+        IList<ProductosDTO> ObtenerTodosLosProductos();
+
+        
+
         /// <summary>
         /// 
         /// </summary>
@@ -28,6 +32,10 @@ namespace Dc.BusinnesLogic.Contractos
         IList<ComprasDTO> ObtenerComprasCliente();
 
         IList<LogComprasDTO> ObtenerLogs();
+
+        string EliminarCompra(int idCompra);
+
+        string ActualizarCompraCliente(ComprasDTO comprasDTO);
 
 
 

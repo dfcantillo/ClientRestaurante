@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { map, filter } from 'rxjs/operators'
 import { Productos } from '../models/productos.model';
+import { List, Enumerable } from 'linqts';
 
 @Injectable({
   providedIn: 'root'
@@ -39,6 +40,17 @@ export class ProductosService {
 
         return respusta;
         
+        })
+      );
+  }
+  obtenerProductos() {
+    const url = "api/ObtenerProductos";
+    return this.http.get <Productos[]> (url, { headers: this.header })
+      .pipe(
+        map(respusta => {
+
+          return respusta;
+
         })
       );
   }

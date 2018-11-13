@@ -3,7 +3,7 @@ import { ComprasService } from '../../servicios/index.service';
 import { Subject } from 'rxjs';
 import * as $ from 'jquery';
 
-declare function crearDataTable();
+declare function crearDataTable(id);
 
 @Component({
   selector: 'app-log-compras',
@@ -20,7 +20,7 @@ export class LogComprasComponent implements OnInit {
 
   ngOnInit() {
     this.consultarLog();
-    crearDataTable();
+    
     //setTimeout(() => {
  
   //  },100);
@@ -32,6 +32,7 @@ export class LogComprasComponent implements OnInit {
     this.compraService.obtenerLogCompras()
       .subscribe((respuesta: any) => {
         this.logs = respuesta;
+        crearDataTable("#tablaLog");
       }, error => {
         console.log(error);
       });

@@ -2,12 +2,16 @@
   <div class="card-body">
     <h2 class="card-title"><strong>Registro de Auditorias de Compras</strong></h2>
     <h4 class="card-subtitle">Reporte de acciones realizadas en las  ventas</h4>
+    <!--<div class="alert alert-info" role="alert" *ngIf="!logs.length">
+      Cargando.....
+    </div>-->
     <div class="table-responsive m-t-40">
-      <table id="myTable" class="table table-bordered table-striped"> <!--[mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="5"-->
+      <table id="tablaLog" class="table table-bordered table-striped">
+        <!--[mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="5"-->
         <thead>
           <tr>
             <!--<th>ID</th>
-            <th>ID COMPRA</th>-->
+          <th>ID COMPRA</th>-->
             <th>FECHA COMPRA</th>
             <th>CLIENTE</th>
             <th>PRODUCTO</th>
@@ -25,8 +29,6 @@
             <td>{{item.fechaDeRegistro| date:'medium'}}</td>
             <td>{{item.accion}}</td>
           </tr>
- 
-    
         </tbody>
       </table>
     </div>

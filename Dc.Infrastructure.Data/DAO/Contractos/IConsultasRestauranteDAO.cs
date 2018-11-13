@@ -11,6 +11,8 @@ namespace Infraestructura.Data.DAO.Contractos
     {
         IList<ProductosDTO> ObtenerProductosPorCategoria(string idCategoria);
 
+        IList<ProductosDTO> ObtenerTodosLosProductos();
+
         int RegistrarComprarCliente(ProductosDTO productosDTO, int cantidad);
 
         IList<ClienteDTO> ObtenerClientesRegistrados();
@@ -29,5 +31,9 @@ namespace Infraestructura.Data.DAO.Contractos
         /// </summary>
         /// <returns>Lista de LogComprasDTO</returns>
         IList<LogComprasDTO> ObtenerLogsCompra();
+
+        int EliminarCompra(int idCompra);
+
+        int ActualizarCompra(ComprasDTO comprasDTO);
     }
 }

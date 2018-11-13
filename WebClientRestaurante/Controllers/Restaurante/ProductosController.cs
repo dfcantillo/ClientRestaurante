@@ -37,6 +37,22 @@ namespace WebClientRestaurante.Controllers.Restaurante
 
         }
 
+        [HttpGet("/api/ObtenerProductos")]
+        public JsonResult ObtenerProductos()
+        {
+            try
+            {
+                IList<ProductosDTO> ilProductos = _obtenerProdcutosServiceBL.ObtenerTodosLosProductos();
+                return Json(ilProductos);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+        }
+
 
         [HttpPost("/api/RegistrarCompra")]
         public JsonResult RegistrarCompra([FromBody] ProductosDTO productosDTO)
@@ -45,6 +61,23 @@ namespace WebClientRestaurante.Controllers.Restaurante
             {
                 string resultado = _obtenerProdcutosServiceBL.RegistrarComprarCliente(productosDTO, productosDTO.CantidadCompra);
                 return Json(resultado);
+            }
+            catch (Exception ex)
+            {
+
+                //throw ex;
+                return Json("Ocurrio un error " + ex.Message);
+            }
+
+        }
+
+        [HttpGet("/api/ObtenerClientesRegistrados")]
+        public JsonResult ObtenerClientesRegistrados()
+        {
+            try
+            {
+                IList<ClienteDTO> IlClienteDTOs = _obtenerProdcutosServiceBL.ObtenerClientesRegistrados();
+                return Json(IlClienteDTOs);
             }
             catch (Exception ex)
             {
@@ -70,6 +103,48 @@ namespace WebClientRestaurante.Controllers.Restaurante
                 return Json("Ocurrio un error " + ex.Message);
             }
 
+        }
+
+        [HttpGet("/api/ObtenerCompras")]
+        public JsonResult ObtenerCompras()
+        {
+            try
+            {
+                IList<ComprasDTO> IlComprasDTOs = _obtenerProdcutosServiceBL.ObtenerComprasCliente();
+                return Json(IlComprasDTOs);
+            }
+            catch (Exception ex)
+            {
+                return Json("Ocurrio un error " + ex.Message);
+            }
+        }
+
+        [HttpPost("/api/EliminarCompraCliente")]
+        public JsonResult EliminarCompraCliente([FromBody] int idRegistro )
+        {
+            try
+            {
+                string resultado = _obtenerProdcutosServiceBL.EliminarCompra(idRegistro);
+                return Json(resultado);
+            }
+            catch (Exception ex)
+            {
+                return Json("Ocurrio un error " + ex.Message);
+            }
+        }
+
+        [HttpPost("/api/ActualizarCompra")]
+        public JsonResult ActualizarCompra([FromBody] ComprasDTO comprasDTO)
+        {
+            try
+            {
+                string resultado = _obtenerProdcutosServiceBL.ActualizarCompraCliente(comprasDTO);
+                return Json(resultado);
+            }
+            catch (Exception ex)
+            {
+                return Json("Ocurrio un error " + ex.Message);
+            }
         }
     }
 }

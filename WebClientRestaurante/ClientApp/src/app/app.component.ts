@@ -1,4 +1,5 @@
-import { Component , } from '@angular/core';
+import { Component, } from '@angular/core';
+import { RouterLink, Router } from '@angular/router'
 declare function svg4everybody();
 @Component({
   selector: 'app-root',
@@ -7,8 +8,10 @@ declare function svg4everybody();
 })
 export class AppComponent {
   title = 'Restaurante';
-
-  constructor() {
+  ruta: any;
+  constructor(private _router: Router) {
     svg4everybody();
+    this.ruta = document.location.hash;
+    console.log(this.ruta);
   }
 }

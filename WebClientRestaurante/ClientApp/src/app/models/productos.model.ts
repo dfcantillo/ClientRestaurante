@@ -1,7 +1,7 @@
 export class Productos{
   constructor(
-    public Id: number,
-    public Nombre: string,
+    public id: number,
+    public nombre: string,
     public Descripcion: string ,
     public precio: number,
     public FechaProducto: Date,

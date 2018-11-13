@@ -34,13 +34,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ClientApp\" />
+    <None Remove="ClientApp\src\app\pages\pages.module.ts" />
+    <None Remove="ClientApp\src\app\pages\proveedores\pages.routes.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Dc.BusinnesLogic\Dc.BusinnesLogic.csproj" />
     <ProjectReference Include="..\Dc.Infrastructure.Data\Dc.Infrastructure.Data.csproj" />
     <ProjectReference Include="..\Dc.Infrastructure.Trasversal\Dc.Infrastructure.Trasversal.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\pages\pages.module.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\pages\pages.routes.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
